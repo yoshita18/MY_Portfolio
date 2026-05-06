@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoshita Yajjapurapu — ML Engineer & Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ─── Navigation ─────────────────────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">YY<span class="accent">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─── Hero ──────────────────────────────────────────────────────────────── -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-content">
+    <p class="hero-greeting reveal">Hi, I'm</p>
+    <h1 class="hero-name reveal">Yoshita<br/>Yajjapurapu</h1>
+    <div class="hero-roles reveal">
+      <span class="roles-prefix">I build</span>
+      <span class="roles-carousel" id="rolesCarousel">
+        <span class="role active">AI & ML Systems</span>
+        <span class="role">LLM Pipelines</span>
+        <span class="role">RAG Applications</span>
+        <span class="role">Agentic Workflows</span>
+        <span class="role">Data Products</span>
+      </span>
+    </div>
+    <p class="hero-sub reveal">
+      ML Engineer · Data Scientist · MS Data Science @ ASU (GPA 3.9)<br/>
+      Building production-grade AI systems that turn data into decisions.
+    </p>
+    <div class="hero-btns reveal">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      <a href="https://github.com/yoshita18" target="_blank" class="btn btn-ghost">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num">3.9</span>
+        <span class="stat-label">GPA</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">$1.8M</span>
+        <span class="stat-label">Annual Impact</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">8+</span>
+        <span class="stat-label">AI Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Publication</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ─── About ─────────────────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title reveal">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a graduate student at <strong>Arizona State University</strong> pursuing an MS in Data Science, Analytics and Engineering (GPA 3.9/4.0), while actively working as an ML Engineer at <strong>Optimalex</strong> in Scottsdale, AZ.
+        </p>
+        <p>
+          My focus is building production-grade AI systems — from LLM auditing pipelines and multi-agent workflows to real-time inference APIs and RAG applications. I love the full arc: research, engineering, and measurable business impact.
+        </p>
+        <p>
+          At Optimalex I've built models that reduced reserve shortfall by <strong>$1.8M annually</strong>, cut manual triage time by <strong>55%</strong>, and slashed inference latency from 800ms to 120ms. At ASU's Language and Education Institute, my T5 fine-tuning work was accepted as a <strong>poster at LERN 2026</strong>.
+        </p>
+        <p>
+          Beyond engineering, I've done applied research in drone detection with YOLOv8, environmental data visualization for ADEQ's fishing advisory program, and published human-interest journalism for ASU News.
+        </p>
+        <div class="about-links">
+          <a href="https://www.linkedin.com/in/yoshita-yajjapurapu-a03453208/" target="_blank" class="about-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/yoshita18" target="_blank" class="about-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:yyajjapu@asu.edu" class="about-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <div class="about-edu">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <p class="edu-school">Arizona State University</p>
+            <p class="edu-degree">M.S. Data Science, Analytics & Engineering</p>
+            <p class="edu-meta">Aug 2024 – May 2026 · GPA: 3.9/4.0</p>
+            <div class="edu-courses">
+              <span>Machine Learning</span>
+              <span>NLP</span>
+              <span>Deep Learning</span>
+              <span>Computer Vision</span>
+              <span>Knowledge Representation</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-pub">
+          <div class="pub-icon">📄</div>
+          <div>
+            <p class="pub-title">LERN Annual Conference 2026</p>
+            <p class="pub-desc">"Automated Run-On Sentence Detection and Correction for Educational Writing Using T5"</p>
+          </div>
+        </div>
+        <div class="about-location">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Tempe, Arizona
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Skills ────────────────────────────────────────────────────────────── -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title reveal">Technical Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">
+          <span class="skill-icon">🐍</span> Languages & Frameworks
+        </h3>
+        <div class="skill-tags">
+          <span class="tag tag-primary">Python</span>
+          <span class="tag tag-primary">SQL</span>
+          <span class="tag tag-primary">PySpark</span>
+          <span class="tag tag-secondary">FastAPI</span>
+          <span class="tag tag-secondary">Streamlit</span>
+          <span class="tag tag-secondary">React</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">
+          <span class="skill-icon">🤖</span> ML & Deep Learning
+        </h3>
+        <div class="skill-tags">
+          <span class="tag tag-primary">PyTorch</span>
+          <span class="tag tag-primary">TensorFlow</span>
+          <span class="tag tag-primary">Scikit-learn</span>
+          <span class="tag tag-secondary">LightGBM</span>
+          <span class="tag tag-secondary">XGBoost</span>
+          <span class="tag tag-secondary">SHAP</span>
+          <span class="tag tag-secondary">YOLOv8</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">
+          <span class="skill-icon">🧠</span> LLMs & NLP
+        </h3>
+        <div class="skill-tags">
+          <span class="tag tag-primary">HuggingFace</span>
+          <span class="tag tag-primary">LangChain</span>
+          <span class="tag tag-primary">RAG</span>
+          <span class="tag tag-secondary">BERT / RoBERTa / T5</span>
+          <span class="tag tag-secondary">Sentence Transformers</span>
+          <span class="tag tag-secondary">LLM Fine-Tuning</span>
+          <span class="tag tag-secondary">ONNX</span>
+          <span class="tag tag-secondary">Gemini API</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">
+          <span class="skill-icon">⚙️</span> MLOps & Infrastructure
+        </h3>
+        <div class="skill-tags">
+          <span class="tag tag-primary">AWS SageMaker</span>
+          <span class="tag tag-primary">Docker</span>
+          <span class="tag tag-primary">Airflow</span>
+          <span class="tag tag-secondary">FAISS</span>
+          <span class="tag tag-secondary">ChromaDB</span>
+          <span class="tag tag-secondary">Evidently AI</span>
+          <span class="tag tag-secondary">Locust</span>
+          <span class="tag tag-secondary">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">
+          <span class="skill-icon">📊</span> Data & Visualization
+        </h3>
+        <div class="skill-tags">
+          <span class="tag tag-primary">Spark</span>
+          <span class="tag tag-primary">Tableau</span>
+          <span class="tag tag-secondary">Pandas</span>
+          <span class="tag tag-secondary">SARIMAX</span>
+          <span class="tag tag-secondary">LSTM</span>
+          <span class="tag tag-secondary">A/B Testing</span>
+          <span class="tag tag-secondary">Librosa</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">
+          <span class="skill-icon">🔊</span> Signal & Audio
+        </h3>
+        <div class="skill-tags">
+          <span class="tag tag-secondary">MFCCs</span>
+          <span class="tag tag-secondary">Spectral Features</span>
+          <span class="tag tag-secondary">NumPy / SciPy</span>
+          <span class="tag tag-secondary">IBM Watson</span>
+          <span class="tag tag-secondary">Acoustic Processing</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Experience ────────────────────────────────────────────────────────── -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title reveal">Experience</h2>
+    <div class="timeline">
+
+      <!-- Optimalex — most technical, highest impact -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="tl-role">ML Engineer & Data Scientist</h3>
+              <p class="tl-company">Optimalex · Scottsdale, AZ</p>
+            </div>
+            <span class="tl-date">Dec 2025 – May 2026</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Built a <strong>LightGBM nuclear verdict risk classifier</strong> on 3.2M bodily injury &amp; malpractice claims (AUC-ROC 0.94); engineered 60+ features via Spark and cut inference latency <strong>800ms → 120ms via ONNX</strong>, reducing reserve shortfall by 22% (~$1.8M annually).</li>
+            <li>Developed a 3-class PCE outcome classifier (LightGBM + clinical NLP) on 120K incidents (macro-F1 0.86, +23% over legacy actuarial rules); fine-tuned BERT on incident reports to reduce manual triage time by <strong>55%</strong>.</li>
+            <li>Trained XGBoost + SHAP settlement-vs-litigation predictor on 500K+ P&amp;C claims, improving 30-day escalation recall <strong>51% → 73%</strong>; built Airflow DAGs pushing daily risk scores via REST API, cutting avg time-to-resolution by <strong>4.2 weeks</strong>.</li>
+            <li>Productionized pipelines on <strong>AWS SageMaker</strong> with Evidently AI drift-triggered retraining and SHAP-integrated Streamlit dashboards used daily by 12 claims adjusters and defense attorneys.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>LightGBM</span><span>XGBoost</span><span>BERT</span><span>ONNX</span><span>Spark</span><span>AWS SageMaker</span><span>Airflow</span><span>SHAP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Assistant LEI — NLP research, publication -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="tl-role">Research Assistant — NLP & Educational AI</h3>
+              <p class="tl-company">Language and Education Institute, ASU</p>
+            </div>
+            <span class="tl-date">Aug 2024 – Apr 2026</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Designed a modular text preprocessing pipeline processing <strong>500K+ student essays</strong> across 3 research projects; reduced manual annotation time by 70%.</li>
+            <li>Fine-tuned <strong>T5-base</strong> for automated run-on sentence detection and correction (F1 = 0.87, +14 pts over spaCy baseline) — accepted as a poster at <strong>LERN 2026 Conference</strong>.</li>
+            <li>Built distractor quality evaluation tooling using sentence-transformer semantic similarity and lexical distinctiveness scoring for MCQ analysis; integrated into a Jupyter widget UI.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>T5</span><span>NLP</span><span>HuggingFace</span><span>Sentence Transformers</span><span>Jupyter Widgets</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Aide - Drone -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="tl-role">Research Aide — Computer Vision & Audio</h3>
+              <p class="tl-company">Arizona State University</p>
+            </div>
+            <span class="tl-date">May 2025 – Aug 2025</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Developed and fine-tuned <strong>YOLOv8 models</strong> in Python and PyTorch on drone datasets, improving real-time detection performance.</li>
+            <li>Built and optimized image recognition pipelines incorporating augmentation and normalization to enhance robustness in varied conditions.</li>
+            <li>Processed acoustic data using <strong>Librosa, NumPy, and SciPy</strong> to extract MFCCs and spectral features distinguishing drone noise from background sound.</li>
+            <li>Assisted in GPU-based inference deployment, contributing to near real-time drone detection solutions.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>YOLOv8</span><span>PyTorch</span><span>Librosa</span><span>MFCCs</span><span>Computer Vision</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Aide -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="tl-role">Data Aide — Environmental Analytics</h3>
+              <p class="tl-company">Arizona State University · in partnership with ADEQ</p>
+            </div>
+            <span class="tl-date">Feb 2026 – Present</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Collected and preprocessed fishing advisory data in partnership with the <strong>Arizona Department of Environmental Quality (ADEQ)</strong>.</li>
+            <li>Built <strong>Tableau visualizations</strong> to communicate complex environmental findings to non-technical agency leadership and bureaucrats.</li>
+            <li>Presented findings to senior ADEQ leadership, translating technical data into actionable policy insights.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>Tableau</span><span>Data Preprocessing</span><span>Environmental Data</span><span>Stakeholder Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teaching Assistant -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="tl-role">Teaching Assistant — SCM 520: Strategic Procurement</h3>
+              <p class="tl-company">Arizona State University</p>
+            </div>
+            <span class="tl-date">Jan 2026 – Mar 2026</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Supported course delivery for Strategic Procurement, translating <strong>quantitative supply chain analytics</strong> and modeling concepts for students from diverse disciplinary backgrounds.</li>
+            <li>Developed supplementary datasets and case study materials, including a <strong>Lucid Motors HVAC sourcing tariff impact analysis</strong> and supplier cost modeling exercise.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>Supply Chain Analytics</span><span>Cost Modeling</span><span>Data Analysis</span><span>Tariff Impact Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Media Relations -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="tl-role">Media Relations Assistant</h3>
+              <p class="tl-company">EdPlus at Arizona State University</p>
+            </div>
+            <span class="tl-date">Jul 2025 – Dec 2025</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Tracked and logged online media mentions of ASU Online using <strong>Cision and Airtable</strong> to monitor brand visibility.</li>
+            <li>Wrote press releases and feature articles for ASU News, ensuring clear, accurate, and engaging coverage.</li>
+            <li>Conducted student interviews to create personalized <strong>human-interest stories</strong> and showcase ASU Online success stories.</li>
+            <li>Coordinated with local media outlets to pitch stories and strengthen ASU's presence across regional channels.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>Science Communication</span><span>Journalism</span><span>Cision</span><span>Airtable</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Projects ──────────────────────────────────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title reveal">Projects</h2>
+    <p class="section-sub reveal">Production-grade AI systems and research prototypes</p>
+
+    <div class="projects-grid">
+
+      <!-- Climate Commitment Audit -->
+      <div class="project-card featured reveal">
+        <div class="project-badge">Live App</div>
+        <div class="project-header">
+          <span class="project-emoji">🌍</span>
+          <div class="project-links">
+            <a href="https://climate-commitment-audit-tare8zbnytup4fbwtxxuwp.streamlit.app/" target="_blank" class="project-link-btn" title="Live Demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Demo
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">Climate Commitment LLM Auditing Pipeline</h3>
+        <p class="project-desc">
+          RAG-based pipeline that audits corporate climate disclosures against IPCC AR6 benchmarks. Detects greenwashing using an 8-indicator framework, stress-tests LLMs with 4 adversarial strategies, and grades reports A–F across hallucination rate, factual accuracy, and policy alignment.
+        </p>
+        <div class="project-highlights">
+          <span>✓ ChromaDB + Sentence Transformers</span>
+          <span>✓ Adversarial Stress-Testing</span>
+          <span>✓ Greenwashing Detection</span>
+        </div>
+        <div class="project-tags">
+          <span>RAG</span><span>ChromaDB</span><span>Claude API</span><span>Streamlit</span><span>Adversarial NLP</span><span>IPCC AR6</span>
+        </div>
+      </div>
+
+      <!-- AI Lead Research Agent -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-emoji">🎯</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-title">AI Lead Research & Outreach Agent</h3>
+        <p class="project-desc">
+          Multi-agent pipeline that researches company websites, synthesizes structured lead cards, runs a qualification gate, and generates personalized A/B outreach emails. Supports single-lead and batch processing with CSV export.
+        </p>
+        <div class="project-highlights">
+          <span>✓ 4-Stage Agentic Pipeline</span>
+          <span>✓ Batch Processing</span>
+          <span>✓ A/B Email Generation</span>
+        </div>
+        <div class="project-tags">
+          <span>Groq / Llama 3.3</span><span>Multi-Agent</span><span>Streamlit</span><span>DuckDuckGo Search</span><span>Pydantic</span>
+        </div>
+      </div>
+
+      <!-- SMB Agentic Workflow -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-emoji">🏢</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-title">SMB Agentic Workflow System</h3>
+        <p class="project-desc">
+          Production FastAPI backend for a multi-agent SMB automation system handling inbound emails, CRM lookups, web research, Slack notifications, and human-in-the-loop approval flows. Full audit logging and webhook architecture.
+        </p>
+        <div class="project-highlights">
+          <span>✓ Human-in-the-Loop Approvals</span>
+          <span>✓ CRM Integration</span>
+          <span>✓ Email + Slack Webhooks</span>
+        </div>
+        <div class="project-tags">
+          <span>FastAPI</span><span>Multi-Agent</span><span>LLM</span><span>Webhooks</span><span>CRM</span><span>Python</span>
+        </div>
+      </div>
+
+      <!-- RAG Chatbot -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-emoji">💬</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-title">Multi-Document RAG Chatbot</h3>
+        <p class="project-desc">
+          Indexes multi-PDF content into FAISS via Gemini embeddings for sub-second retrieval. Features 6-turn rolling conversational memory, real-time source citations with page numbers, and tunable RAG hyperparameters via Streamlit sidebar.
+        </p>
+        <div class="project-highlights">
+          <span>✓ Sub-second Retrieval</span>
+          <span>✓ Source Citations</span>
+          <span>✓ Tunable Hyperparams</span>
+        </div>
+        <div class="project-tags">
+          <span>LangChain</span><span>FAISS</span><span>Gemini API</span><span>Streamlit</span><span>PyPDF</span>
+        </div>
+      </div>
+
+      <!-- Transformer Inference API -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-emoji">⚡</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-title">Real-Time Transformer Inference API</h3>
+        <p class="project-desc">
+          Containerized transformer NLP service via FastAPI. Reduced latency <strong>400ms → &lt;100ms</strong> via INT8 quantization and batched inference. Validated 200+ req/min throughput under Locust load testing. HuggingFace Hub for artifact versioning.
+        </p>
+        <div class="project-highlights">
+          <span>✓ 4× Latency Reduction</span>
+          <span>✓ 200+ req/min Throughput</span>
+          <span>✓ INT8 Quantization</span>
+        </div>
+        <div class="project-tags">
+          <span>FastAPI</span><span>Docker</span><span>PyTorch</span><span>ONNX</span><span>HuggingFace</span><span>Locust</span>
+        </div>
+      </div>
+
+      <!-- CafeIQ -->
+      <div class="project-card reveal">
+        <div class="project-badge">Live Prototype</div>
+        <div class="project-header">
+          <span class="project-emoji">☕</span>
+          <div class="project-links">
+            <a href="https://yoshita18.github.io/CafeIQ/" target="_blank" class="project-link-btn" title="Live Demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Demo
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">CafeIQ — AI Inventory Assistant</h3>
+        <p class="project-desc">
+          Browser-based AI inventory management assistant for small cafes. Real-time stock tracking with status indicators, reorder recommendations, demand forecasting, and AI-drafted supplier emails. Powered by Llama 3.3 via Groq with streaming responses.
+        </p>
+        <div class="project-highlights">
+          <span>✓ Real-time Stock Dashboard</span>
+          <span>✓ AI Reorder Drafting</span>
+          <span>✓ Zero-Backend Architecture</span>
+        </div>
+        <div class="project-tags">
+          <span>React</span><span>Groq</span><span>Llama 3.3</span><span>Tailwind CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Two-Tower Recommendation -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-emoji">🛍️</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-title">Two-Tower Recommendation System</h3>
+        <p class="project-desc">
+          Neural two-tower model for product recommendations using contrastive learning on user-item interaction pairs. Features pre-computed product embedding indexing, latency benchmarking pipeline, and ETL preprocessing for training data generation.
+        </p>
+        <div class="project-highlights">
+          <span>✓ Contrastive Learning</span>
+          <span>✓ Pre-computed Embeddings</span>
+          <span>✓ Latency Benchmarking</span>
+        </div>
+        <div class="project-tags">
+          <span>PyTorch</span><span>Contrastive Learning</span><span>Embeddings</span><span>ETL</span><span>Python</span>
+        </div>
+      </div>
+
+      <!-- Climate Time Series -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-emoji">📈</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-title">Climate Time-Series Forecasting for Air Quality</h3>
+        <p class="project-desc">
+          Benchmarked SARIMAX vs. LSTM on multi-year pollutant datasets across multiple cities. Surfaced seasonal trends and patterns, and delivered urban air quality forecasts. Visualized model performance and prediction intervals for non-technical audiences.
+        </p>
+        <div class="project-highlights">
+          <span>✓ SARIMAX vs LSTM Benchmark</span>
+          <span>✓ Multi-city Dataset</span>
+          <span>✓ Seasonal Decomposition</span>
+        </div>
+        <div class="project-tags">
+          <span>SARIMAX</span><span>LSTM</span><span>Pandas</span><span>Time Series</span><span>Python</span>
+        </div>
+      </div>
+
+      <!-- AI Voice Turing Test -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-emoji">🎙️</span>
+          <div class="project-links"></div>
+        </div>
+        <h3 class="project-title">AI Voice Turing Test Classifier</h3>
+        <p class="project-desc">
+          Multimodal classifier distinguishing human vs. AI-generated voices using HuggingFace NLP models and IBM Watson audio features. Deployed as an interactive Streamlit demo allowing real-time audio classification with confidence scores.
+        </p>
+        <div class="project-highlights">
+          <span>✓ Human vs AI Voice Detection</span>
+          <span>✓ Multimodal Features</span>
+          <span>✓ Interactive Demo</span>
+        </div>
+        <div class="project-tags">
+          <span>HuggingFace</span><span>IBM Watson</span><span>Streamlit</span><span>Audio ML</span><span>Python</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Research ──────────────────────────────────────────────────────────── -->
+<section id="research">
+  <div class="container">
+    <h2 class="section-title reveal">Research & Publications</h2>
+    <div class="research-grid">
+
+      <div class="research-card reveal">
+        <div class="research-type">Conference Poster · LERN 2026</div>
+        <h3 class="research-title">Automated Run-On Sentence Detection and Correction for Educational Writing Using T5</h3>
+        <p class="research-desc">
+          Fine-tuned a T5-base sequence-to-sequence model for automatically detecting and correcting run-on sentences in student writing. Achieved F1 = 0.87, a +14 point improvement over the spaCy rule-based baseline. Part of a broader pipeline processing 500K+ student essays at ASU's Language and Education Institute.
+        </p>
+        <div class="research-meta">
+          <span class="research-venue">LERN Annual Conference, 2026</span>
+          <span class="research-affil">Language & Education Institute, ASU</span>
+        </div>
+        <div class="project-tags">
+          <span>T5</span><span>NLP</span><span>Seq2Seq</span><span>Educational AI</span><span>HuggingFace</span>
+        </div>
+      </div>
+
+      <div class="research-card reveal">
+        <div class="research-type">Applied Research · ASU × ADEQ</div>
+        <h3 class="research-title">Environmental Data Visualization for Fishing Advisory Communication</h3>
+        <p class="research-desc">
+          Collected and preprocessed fishing advisory data for the Arizona Department of Environmental Quality. Built Tableau dashboards to communicate contamination levels and advisory zones to non-technical agency leadership. Presented findings directly to ADEQ bureaucrats and leadership, translating environmental data into actionable policy communication.
+        </p>
+        <div class="research-meta">
+          <span class="research-venue">Arizona State University × ADEQ</span>
+        </div>
+        <div class="project-tags">
+          <span>Tableau</span><span>Environmental Data</span><span>Data Preprocessing</span><span>Policy Communication</span>
+        </div>
+      </div>
+
+      <div class="research-card reveal">
+        <div class="research-type">Applied Research · ASU</div>
+        <h3 class="research-title">Real-Time Drone Detection via YOLOv8 & Acoustic Features</h3>
+        <p class="research-desc">
+          Developed and fine-tuned YOLOv8 models on drone datasets for real-time detection. Built image recognition pipelines with augmentation and normalization for varied environmental conditions. Processed acoustic data using Librosa to extract MFCCs and spectral features, distinguishing drone noise from background sound. Contributed to GPU-based inference deployment for near real-time detection.
+        </p>
+        <div class="research-meta">
+          <span class="research-venue">Arizona State University</span>
+        </div>
+        <div class="project-tags">
+          <span>YOLOv8</span><span>PyTorch</span><span>Librosa</span><span>MFCCs</span><span>Computer Vision</span><span>Acoustic ML</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Writing ───────────────────────────────────────────────────────────── -->
+<section id="writing">
+  <div class="container">
+    <h2 class="section-title reveal">Published Writing</h2>
+    <p class="section-sub reveal">Human-interest articles published on ASU News as Media Relations Assistant at EdPlus</p>
+
+    <div class="articles-grid">
+      <a href="https://news.asu.edu/20251201-sun-devil-community-asu-partnership-helps-graduate-career-shift-fulfill-personal-goals" target="_blank" class="article-card reveal">
+        <div class="article-source">ASU News</div>
+        <h4 class="article-title">ASU Partnership Helps Graduate Career Shift Fulfill Personal Goals</h4>
+        <p class="article-meta">Dec 2025 · EdPlus at ASU</p>
+        <span class="article-arrow">→</span>
+      </a>
+
+      <a href="https://news.asu.edu/20251203-sun-devil-community-asu-graduate-charts-new-course-through-asu-online" target="_blank" class="article-card reveal">
+        <div class="article-source">ASU News</div>
+        <h4 class="article-title">ASU Graduate Charts New Course Through ASU Online</h4>
+        <p class="article-meta">Dec 2025 · EdPlus at ASU</p>
+        <span class="article-arrow">→</span>
+      </a>
+
+      <a href="https://news.asu.edu/20251201-sun-devil-community-asu-online-launches-graduates-childhood-dreams" target="_blank" class="article-card reveal">
+        <div class="article-source">ASU News</div>
+        <h4 class="article-title">ASU Online Launches Graduate's Childhood Dreams</h4>
+        <p class="article-meta">Dec 2025 · EdPlus at ASU</p>
+        <span class="article-arrow">→</span>
+      </a>
+
+      <a href="https://news.asu.edu/20251112-sun-devil-community-mom-and-uber-employee-finds-success-through-asu-online-become" target="_blank" class="article-card reveal">
+        <div class="article-source">ASU News</div>
+        <h4 class="article-title">Mom and Uber Employee Finds Success Through ASU Online</h4>
+        <p class="article-meta">Nov 2025 · EdPlus at ASU</p>
+        <span class="article-arrow">→</span>
+      </a>
+
+      <a href="https://news.asu.edu/20250918-local-national-and-global-affairs-asu-supports-mastercard-foundation-scholars-across" target="_blank" class="article-card reveal">
+        <div class="article-source">ASU News</div>
+        <h4 class="article-title">ASU Supports Mastercard Foundation Scholars Across the Globe</h4>
+        <p class="article-meta">Sep 2025 · EdPlus at ASU</p>
+        <span class="article-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Contact ───────────────────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="contact-sub">
+        I'm actively looking for <strong>AI Engineer, ML Engineer, and Data Scientist</strong> roles.<br/>
+        If you're working on something interesting, I'd love to connect.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:yyajjapu@asu.edu" class="contact-btn primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          yyajjapu@asu.edu
+        </a>
+        <a href="https://www.linkedin.com/in/yoshita-yajjapurapu-a03453208/" target="_blank" class="contact-btn secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/yoshita18" target="_blank" class="contact-btn secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <p class="contact-location">📍 Tempe, Arizona · Open to onsite · Willing to relocate</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <p class="footer-text">Yoshita Yajjapurapu · Built with ♥ · 2025</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
